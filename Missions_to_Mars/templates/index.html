@@ -14,11 +14,16 @@
     <div class="jumbotron text-center">
       <h1>Mission to Mars</h1>      
       <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
-    </div>
-    <img src="{{ mars_data.sloth_img }}" alt="Sloth">
-    <h2>The typical weather in Costa Rica is:</h2>
-    <h3>Max Temp: {{ mars_data.max_temp }}</h3>
-    <h3>Min Temp: {{ mars_data.min_temp }}</h3>
+    </div>    
+    <h2>Latest Mars News</h2>
+    <h4>{{ mars_data.title }}</h4>
+    <h6>{{ mars_data.p }}</h6>
+    <h2>Featured Mars Image</h2>
+    <img src="{{ mars_data.featured_image_url }}" alt="Mars">
+
+
+
+    
   </div>
   </div>
 </body>
