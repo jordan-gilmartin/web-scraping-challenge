@@ -9,23 +9,47 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
+
+
+<!-- Header and Initial Section with Title / Paragraph -->
 <body>
   <div class="container-fluid">
-    <div class="jumbotron text-center">
+    <div class="jumbotron text-center">      
       <h1>Mission to Mars</h1>      
-      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
-    </div>    
-    <h2>Latest Mars News</h2>
-    <h4>{{ mars_data.title }}</h4>
-    <h6>{{ mars_data.p }}</h6>
-    <h2>Featured Mars Image</h2>
-    <img src="{{ mars_data.featured_image_url }}" alt="Mars">
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>      
+    </div>      
+    <div>
+      <h2>Latest Mars News</h2>
+      <h4>{{ mars_data.title }}</h4>
+      <h6>{{ mars_data.p }}</h6>
+    </div>  
+  
+  
+    <!-- Featured Image -->
+    <div class="row">
+      <div class="col-md-8">
+        <h2>Featured Mars Image</h2>
+        <img src="{{ mars_data.featured_image_url }}" alt="Dusty Space Cloud">      
+      </div>
+
+      <!-- Table -->
+      <div class="col-md-4">
+        <div class="row">
+          <h4>Mars Facts</h4>
+          {{ mars_data.table | safe }}
+        </div>
+      </div>
+    </div>
 
 
 
-    
+
+
+
+
   </div>
-  </div>
+  
+
 </body>
 
 </html>
