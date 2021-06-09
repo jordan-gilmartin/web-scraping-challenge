@@ -18,6 +18,8 @@ In this exercise I completed a web-scraping using Jupyter Notebook, BeautifulSou
 
 - I visited the Mars Facts webpage [here](https://space-facts.com/mars/) and used Pandas to scrape the table containing facts about the planet including Diameter, Mass, etc.
 
+![mars facts](Images/marsfacts.png)
+
 ### Mars Hemispheres
 
 - I visited the USGS Astrogeology site [here](https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars) to obtain high resolution images for each of Mars' hemispheres.
