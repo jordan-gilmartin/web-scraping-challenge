@@ -38,6 +38,17 @@ In this exercise I completed a web-scraping using Jupyter Notebook, BeautifulSou
 I used MongoDB with Flask templating to create a new HTML page that  displays all of the information that was scraped from the URLs above.
 
 - I started by converting the Jupyter notebook into a Python script with a function called `scrape_info` that will execute all of the scraping code from above and return one Python dictionary containing all of the scraped data.
+
+![scrape_info function](Images/scrapeinfo.png)
+
 - Next, I created a route called `/scrape` that imports the `scrape_mars.py` script and calls the `scrape_info` function and stores the return value in Mongo as a Python dictionary.
+
+![scrape route](Images/scraperoute.png)
+
 - I created a root route `/` that will query the Mongo database and pass the mars data into an HTML template to display the data.
+
+![root route](Images/rootroute.png)
+
 - I created a template HTML file called `index.html` that will  take the mars data dictionary and display all of the data in the  appropriate HTML elements. 
+
+![html](Images/html.png)
