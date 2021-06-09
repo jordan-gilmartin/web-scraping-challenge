@@ -1,10 +1,14 @@
 # web-scraping-challenge
 
+![mars photo](Images/mars.png)
+
 In this exercise I completed a web-scraping using Jupyter Notebook, BeautifulSoup, Pandas, and Requests/Splinter.
 
 ### NASA Mars News
 
 - I scraped the [NASA Mars News Site](https://mars.nasa.gov/news/) and collected the latest News Title and Paragraph Text. 
+
+![news](Images/news.png)
 
 ### JPL Mars Space Images - Featured Image
 
@@ -18,6 +22,8 @@ In this exercise I completed a web-scraping using Jupyter Notebook, BeautifulSou
 
 - I visited the USGS Astrogeology site [here](https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars) to obtain high resolution images for each of Mars' hemispheres.
 - I saved both the image url string for the full resolution hemisphere  image, and the Hemisphere title containing the hemisphere name using a Python dictionary to store the data.
+
+![quad](Images/quad.png)
 
 ------
 
